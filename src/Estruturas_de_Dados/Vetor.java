@@ -25,6 +25,24 @@ public class Vetor {
         }
     }
 
+     public int buscaBinaria(int alvo) {
+        return buscaBinaria(alvo, 0, vetor.length -1);
+    }
+
+    private int buscaBinaria(int alvo, int inicio, int fim){
+        int meio;
+        meio = (inicio + fim) / 2;
+        if(alvo == vetor[meio]){
+            return meio;
+        }else if(inicio >= fim){
+            return -1;
+        }else if(alvo > vetor[meio]){
+            return buscaBinaria(alvo, meio + 1 , fim);
+        }else{
+            return buscaBinaria(alvo, inicio,meio -1);
+        }
+    }
+
     public void imprimirVetor(){
         System.out.print("[ ");
         for(int i = 0; i < vetor.length; i++ ){
