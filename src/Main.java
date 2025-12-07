@@ -36,9 +36,9 @@ public class Main{
         arvore.inserir(5);
         arvore.inserir(6);*/
 
-        int tamanho = 10000; // Opções: 100, 1000, 10000 
+        int tamanho = 100; // Opções: 100, 1000, 10000 
         
-        int[] dados = GeradorDeDados.gerarOrdenado(tamanho); 
+        int[] dados = GeradorDeDados.gerarInversamenteOrdenado(tamanho); 
         
         System.out.println("=== TESTANDO COM " + tamanho + " ELEMENTOS ===");
 
