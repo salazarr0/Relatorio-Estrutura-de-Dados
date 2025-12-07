@@ -1,4 +1,4 @@
-package src.Estruturas_de_Dados;
+package src.Estruturas_de_Dados.Vetor;
 public class Vetor {
     private int[] vetor;
 

@@ -1,5 +1,6 @@
 package src;
-import src.Estruturas_de_Dados.*;
+import src.Estruturas_de_Dados.Vetor.Vetor;
+import src.Estruturas_de_Dados.Arvores.*;
 public class Main{
     public static void main(String[] args ){
         Vetor vetor = new Vetor();
@@ -24,5 +25,14 @@ public class Main{
         System.out.println("O Número alvo se encontra no indice: " + vetor.buscaSequencial(54));
         vetor.imprimirVetor();
         System.out.println("-------------------------------------------------");
+
+        Arvore arvore = new ArvoreAVL();
+        arvore.inserir(1);
+        arvore.inserir(2);
+        arvore.inserir(3);
+        arvore.inserir(4);
+        arvore.inserir(5);
+        arvore.inserir(6);
+        arvore.toString();
     }
 }
