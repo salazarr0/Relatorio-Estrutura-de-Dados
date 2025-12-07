@@ -25,7 +25,7 @@ public class Main{
         System.out.println("O Número alvo se encontra no indice: " + vetor.buscaSequencial(54));
         vetor.imprimirVetor();
         System.out.println("-------------------------------------------------");
-
+        
         Arvore arvore = new ArvoreAVL();
         arvore.inserir(1);
         arvore.inserir(2);
@@ -33,6 +33,6 @@ public class Main{
         arvore.inserir(4);
         arvore.inserir(5);
         arvore.inserir(6);
-        arvore.toString();
+        
     }
 }

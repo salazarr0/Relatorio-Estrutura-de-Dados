@@ -25,6 +25,7 @@ public class Vetor {
         }
     }
 
+    //busca
     public int buscaBinaria(int alvo) {
         return buscaBinaria(alvo, 0, vetor.length -1);
     }
@@ -44,19 +45,15 @@ public class Vetor {
     }
     
     public int buscaSequencial(int alvo){
-        return buscaSequencial(alvo, 0, vetor.length -1);
+       for(int i = 0; i < this.tamanho; i++){
+            if(vetor[i] == alvo ){
+                return i;
+            }
+       }
+       return -1;
     }
 
-    private int buscaSequencial(int alvo, int indice, int fim){
-        if(alvo == vetor[indice]) {
-            return indice;
-        } else if (alvo > vetor[fim]){
-            return -1;
-        }else {
-            return buscaSequencial(alvo, indice + 1, fim);
-        }
-    }
-
+    //imprimir
     public void imprimirVetor(){
         System.out.print("[ ");
         for(int i = 0; i < vetor.length; i++ ){

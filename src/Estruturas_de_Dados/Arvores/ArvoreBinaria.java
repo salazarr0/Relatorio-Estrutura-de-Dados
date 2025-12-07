@@ -7,4 +7,6 @@ public class ArvoreBinaria extends Arvore{
     public String toString(){
         return "------------Árvore Binária--------------";
     };
+
+    
 }

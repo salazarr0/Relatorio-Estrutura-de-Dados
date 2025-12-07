@@ -35,6 +35,5 @@ public abstract class Arvore{
                 atual.direita = new No(valor);
             }
         }
-
     }
 }

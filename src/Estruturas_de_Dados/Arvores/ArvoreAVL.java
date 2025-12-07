@@ -11,6 +11,7 @@ public class ArvoreAVL extends Arvore {
         return "------------Árvore AVL--------------";
     };
 
+    //inserção
     @Override
     public void inserir(int valor){
         this.raiz = inserir(this.raiz, valor);
@@ -35,6 +36,7 @@ public class ArvoreAVL extends Arvore {
         return balancear(atual);
     }
 
+    //balanceamento
     public int altura(){
         return altura(raiz);
     };
@@ -46,6 +48,7 @@ public class ArvoreAVL extends Arvore {
         int alturaDir = altura(raiz.direita);
         return Math.max(alturaEsq, alturaDir) + 1;
     }
+
 
     private int pegarBalanceamento(No no){
         if (no == null){
@@ -75,6 +78,7 @@ public class ArvoreAVL extends Arvore {
             return raiz;
     }
 
+    //Rotação
     private No rotacaoDireita(No raiz){
         No x, y, z;
         y = raiz;
@@ -98,6 +102,4 @@ public class ArvoreAVL extends Arvore {
 
         return x;
     };
-
-
 }
