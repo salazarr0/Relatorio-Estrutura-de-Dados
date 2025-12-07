@@ -64,14 +64,14 @@ public class ArvoreAVL extends Arvore {
             if(pegarBalanceamento(raiz.esquerda) >= 0){
                 return rotacaoDireita(raiz);
             }else{
-                raiz.esquerda = rotacaoEsquerda(raiz);
+                raiz.esquerda = rotacaoEsquerda(raiz.esquerda);
                 return rotacaoDireita(raiz);
             }
         }else if(FB < -1){
             if(pegarBalanceamento(raiz.direita) <= 0){
                 return rotacaoEsquerda(raiz);
             }else{
-                raiz.direita = rotacaoDireita(raiz);
+                raiz.direita = rotacaoDireita(raiz.direita);
                 return rotacaoEsquerda(raiz);
             }
         }
