@@ -25,7 +25,7 @@ public class Vetor {
         }
     }
 
-     public int buscaBinaria(int alvo) {
+    public int buscaBinaria(int alvo) {
         return buscaBinaria(alvo, 0, vetor.length -1);
     }
 
@@ -40,6 +40,20 @@ public class Vetor {
             return buscaBinaria(alvo, meio + 1 , fim);
         }else{
             return buscaBinaria(alvo, inicio,meio -1);
+        }
+    }
+    
+    public int buscaSequencial(int alvo){
+        return buscaSequencial(alvo, 0, vetor.length -1);
+    }
+
+    private int buscaSequencial(int alvo, int indice, int fim){
+        if(alvo == vetor[indice]) {
+            return indice;
+        } else if (alvo > vetor[fim]){
+            return -1;
+        }else {
+            return buscaSequencial(alvo, indice + 1, fim);
         }
     }
 

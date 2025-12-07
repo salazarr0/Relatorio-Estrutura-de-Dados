@@ -13,10 +13,16 @@ public class Main{
         vetor.inserirApend(76);
         vetor.inserirApend(25);
 
-        System.out.println("---------------------------------");
+        System.out.println("----------------Busca Binária-----------------");
         System.out.println("Buscando o numero 9...");
         System.out.println("O Número alvo se encontra no indice: " + vetor.buscaBinaria(9));
         vetor.imprimirVetor();
-        System.out.println("---------------------------------");
+        System.out.println("----------------------------------------------");
+
+        System.out.println("---------------Busca Sequencial------------------");
+        System.out.println("Buscando o numero 54...");
+        System.out.println("O Número alvo se encontra no indice: " + vetor.buscaSequencial(54));
+        vetor.imprimirVetor();
+        System.out.println("-------------------------------------------------");
     }
 }
