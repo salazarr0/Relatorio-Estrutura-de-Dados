@@ -14,7 +14,7 @@ O objetivo principal deste projeto é comparar a eficiência de diferentes estru
 ## 🚀 Tecnologias Utilizadas
 
   * **Linguagem:** Java (JDK 8+)
-  * **Conceitos:** Manipulação de memória, Recursividade, Complexidade de Algoritmos (Big O), Princípios SOLID.
+  * **Conceitos:** Manipulação de memória, Recursividade, Complexidade de Algoritmos (Big O).
   * **Ferramentas:** VS Code (ou IDE de preferência), Git.
 
 ## ⚙️ Implementações "Do Zero"
@@ -85,7 +85,7 @@ O sistema executa automaticamente os testes seguindo estes passos:
 
 ## 📈 Exemplo de Resultados
 
-*Valores aproximados obtidos em ambiente de teste (Core i5, 16GB RAM):*
+*Valores aproximados obtidos em ambiente de teste (Celeron 11° geração, 4GB RAM):*
 
 | Cenário (10k elementos) | Vetor (Busca) | AVL (Busca) |
 | :--- | :--- | :--- |
