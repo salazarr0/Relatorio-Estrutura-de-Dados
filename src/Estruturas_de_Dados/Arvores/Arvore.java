@@ -36,4 +36,21 @@ public abstract class Arvore{
             }
         }
     }
+
+   
+    public No buscar(int valor){
+        return buscar(this.raiz, valor);
+    }
+
+    private No buscar(No atual, int valor){
+        if (atual == null) {
+            return null;
+        }else if (valor == atual.valor) {
+            return atual;
+        }else if (valor < atual.valor) {
+            return buscar(atual.esquerda, valor);
+        } else {
+            return buscar(atual.direita, valor);
+        }
+    }
 }
