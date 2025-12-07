@@ -14,6 +14,8 @@ public class Main{
         vetor.inserirApend(76);
         vetor.inserirApend(25);
 
+        vetor.bubbleSort();
+    
         System.out.println("----------------Busca Binária-----------------");
         System.out.println("Buscando o numero 9...");
         System.out.println("O Número alvo se encontra no indice: " + vetor.buscaBinaria(9));
@@ -25,7 +27,7 @@ public class Main{
         System.out.println("O Número alvo se encontra no indice: " + vetor.buscaSequencial(54));
         vetor.imprimirVetor();
         System.out.println("-------------------------------------------------");
-        
+
         Arvore arvore = new ArvoreAVL();
         arvore.inserir(1);
         arvore.inserir(2);
